@@ -1,0 +1,12 @@
+{
+  "name": "voto-a-voto",
+  "version": "1.0.0",
+  "description": "Acompanhamento da apuração das eleições com dados do TSE",
+  "private": true,
+  "license": "MIT",
+  "main": "src/server.js",
+  "engines": { "node": ">=24" },
+  "scripts": {
+    "start": "node --disable-warning=ExperimentalWarning src/server.js"
+  }
+}

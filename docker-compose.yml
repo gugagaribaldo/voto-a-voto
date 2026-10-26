@@ -1,0 +1,20 @@
+services:
+  voto-a-voto:
+    build: .
+    image: voto-a-voto:latest
+    container_name: voto-a-voto
+    restart: unless-stopped
+    ports:
+      - "3100:3000"
+    environment:
+      # Eleição a acompanhar: ajustar para as próximas eleições.
+      ANO: "2026"
+      ELEICAO: "6258"
+      CARGO: "1"
+      POPULACAO: "214211951"
+      POLL_SEGUNDOS: "30"
+    volumes:
+      - dados:/app/data
+
+volumes:
+  dados:

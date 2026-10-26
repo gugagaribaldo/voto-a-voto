@@ -1,0 +1,31 @@
+body { font-family: system-ui, sans-serif; background: #111; color: #eee; margin: 0; padding: 24px; }
+h1 { margin: 0 0 4px; font-size: 22px; }
+h2 { font-size: 18px; margin: 28px 0 12px; }
+#meta { color: #999; font-size: 14px; margin-bottom: 16px; }
+#cards { display: flex; gap: 16px; flex-wrap: wrap; }
+.card { flex: 1; min-width: 220px; background: #1d1d1d; border-radius: 10px; padding: 16px; border-top: 6px solid var(--c); }
+.nome { font-size: 18px; font-weight: 600; }
+.sub { color: #999; font-size: 13px; }
+.pct { font-size: 52px; font-weight: 700; margin: 8px 0 0; }
+.votos { font-size: 18px; }
+#diff { font-size: 30px; font-weight: 700; margin: 16px 0; color: #f5c542; }
+#bar { display: flex; height: 28px; border-radius: 6px; overflow: hidden; margin: 12px 0 20px; background: #333; }
+#bar div { height: 100%; transition: width .5s; }
+#resumo { display: flex; gap: 24px; flex-wrap: wrap; font-size: 16px; margin-bottom: 12px; }
+#estados { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 12px; }
+.uf { background: #1d1d1d; border-radius: 8px; padding: 12px; border-left: 6px solid var(--c); }
+.uf-h { display: flex; justify-content: space-between; align-items: baseline; }
+.uf-nome { font-weight: 600; }
+.uf-apur { color: #999; font-size: 12px; }
+.linha { display: flex; justify-content: space-between; font-size: 14px; margin-top: 6px; }
+.linha b { font-size: 18px; }
+.mini { display: flex; height: 8px; border-radius: 4px; overflow: hidden; margin-top: 8px; background: #333; }
+.mini div { height: 100%; }
+.uf-dif { color: #f5c542; font-size: 13px; margin-top: 6px; }
+#err { color: #ff6b6b; }
+.grade { display: flex; gap: 16px; flex-wrap: wrap; }
+.q { flex: 1; min-width: 220px; background: #1d1d1d; border-radius: 10px; padding: 16px; }
+.q .t { color: #999; font-size: 13px; }
+.q .v { font-size: 32px; font-weight: 700; margin-top: 4px; }
+.q .s { font-size: 14px; color: #ccc; margin-top: 2px; }
+.q.dest .v { color: #f5c542; }
